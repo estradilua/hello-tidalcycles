@@ -1,26 +1,29 @@
-cabal-version:      3.4
-name:               hello-tidal
-version:            0.1.0.0
+cabal-version: 3.4
+name: hello-tidal
+version: 0.1.0.0
 -- synopsis:
 -- description:
-license:            GPL-3.0-or-later
-license-file:       LICENSE
-author:             Lua Viana Reis
-maintainer:         me@lua.blog.br
+license: GPL-3.0-or-later
+license-file: LICENSE
+author: Lua Viana Reis
+maintainer: me@lua.blog.br
 -- copyright:
-category:           Sound
-build-type:         Simple
-extra-doc-files:    CHANGELOG.md
--- extra-source-files:
+category: Sound
+build-type: Simple
+extra-doc-files: CHANGELOG.md
 
+-- extra-source-files:
 common warnings
-    ghc-options: -Wall
+  ghc-options: -Wall
 
 library
-    import:           warnings
-    exposed-modules:  MyLib
-    -- other-modules:
-    -- other-extensions:
-    build-depends:    base ^>=4.19.2.0
-    hs-source-dirs:   src
-    default-language: GHC2021
+  import: warnings
+  exposed-modules: MyLib
+  -- other-modules:
+  -- other-extensions:
+  build-depends:
+    base ^>=4.19.2.0,
+    tidal,
+
+  hs-source-dirs: src
+  default-language: GHC2021

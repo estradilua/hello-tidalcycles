@@ -1,0 +1,15 @@
+d1 $ n "c a f e" # sound "909!4"
+
+d2 $ n "c a f e" # sound "808mc"
+
+d3 $ slow 2 $ s "arpy" <| n "c a f e c a f e c a f e c a f e" -- as below
+
+d4 $ s "superpiano" <| n "c a f e"
+
+d5 $ slow 2 $ s "amencutup" <| n (shuffle 8 $ run 32) # speed "{1,2,3}%8" -- wisott
+
+d6 $ slow 4 $ s "superpiano" <| n "c d f g a c6 d6 f6 g6 a6 c7"
+
+d7 $ loopAt 8 $ s "bev:2"
+
+d8 $ slow 8 $ s "sitar" <| n (run 8)
